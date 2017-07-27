@@ -1,9 +1,22 @@
 @foreach($projets_in_blade as $one_projet)
-	{{$one_projet->id_user}}
-	: {{$one_projet->id_projet}}
-	: {{$one_projet->content}}
-	: {{$one_projet->titre_projet}}
+<div class="content">
+                <div class="title m-b-md">
+                    {{$one_projet->titre_projet}}
+                </div>
 
-	@endforeach
+                <div class="links">
+                    
+                    {{$one_projet->id_user}}
+                    {{$one_projet->id_projet}}
+					{{$one_projet->content}}
+					
+                    
+                </div>
+            </div>
+	
+	
+	<br>
+
+@endforeach
 
 	

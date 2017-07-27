@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title></title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -66,28 +66,25 @@
 
         </style>
     </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
-                </div>
-            @endif
+	<body>
+	<div class="content">
+		
+		<form action="post" method="cible.php">
+  			
+  			Mail
+  			<br> 
+  			<input type="email" name="mail"><br>
+  			Password 
+  			<br>
+  			<input type="password" name="">
+  			<br>
+  			<input type="submit" value="Submit">
+		</form>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Remed_crud
-                </div>
+	</div>
+		
+	</body>
 
-                <div class="links">
-                    
-                    <a href="{{url('/projets') }}"> Liste des projets</a>
-                    <a href="{{url('/login') }}"> Connection</a>
-                    <a href="{{ url('/form') }}">Formulaire d'inscription</a>
-                </div>
-            </div>
-        </div>
-        
-    </body>
-</html>
+
+	
+</html>	
