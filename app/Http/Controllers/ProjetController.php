@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\projet;
+use App\Projet;
 
 class ProjetController extends Controller
 {
@@ -19,7 +19,6 @@ class ProjetController extends Controller
 
         $projets = Projet::all();
        
-        
         return view('projets',['projets_in_blade'=>$projets]);
         // $data = User::take(2)->get();
         // $data = User::orderBy('name','desc')->get();

@@ -54,7 +54,3 @@ Route::get('users', function (){
 
 Route::get('projets', 'ProjetController@index');
 
-Route::get('projets', function (){
-	return view('projets');
-});
-

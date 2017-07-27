@@ -5,3 +5,5 @@
 	: {{$one_projet->titre_projet}}
 
 	@endforeach
+
+	
